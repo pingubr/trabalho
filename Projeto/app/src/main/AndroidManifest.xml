@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="Telas.Cadastro_Locacao" />
+        <activity android:name="Telas.Cadastro_Veiculos" />
+        <activity android:name="Telas.Cadastro_Clientes" />
+        <activity android:name="Telas.Cadastro_Funcionarios" />
+        <activity android:name="Telas.Veiculos" />
+        <activity android:name="Telas.Clientes" />
+        <activity android:name="Telas.Funcionarios"></activity>
     </application>
 
 </manifest>
