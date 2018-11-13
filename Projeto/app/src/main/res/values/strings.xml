@@ -6,15 +6,15 @@
     <string name="cor_do_veiculo">Cor do Veiculo</string>
     <string name="valor_do_seguro">Valor do Seguro</string>
     <string name="valor_do_aluguel">Valor do Aluguel</string>
-    <string name="salvar">Salvar</string>
-    <string name="cancelar">Cancelar</string>
+    <string name="salvar1">Salvar</string>
+    <string name="cancelar1">Cancelar</string>
     <string name="novo">Novo</string>
-    <string name="cancelar">Cancelar</string>
+    <string name="cancelar2">Cancelar</string>
     <string name="endere_o">Endereço</string>
     <string name="cpf">CPF</string>
     <string name="cnh">CNH</string>
     <string name="numero_de_dependentes">Numero de Dependentes</string>
     <string name="nome">Nome</string>
     <string name="rg">RG</string>
-    <string name="salvar">Salvar</string>
+    <string name="salvar2">Salvar</string>
 </resources>
