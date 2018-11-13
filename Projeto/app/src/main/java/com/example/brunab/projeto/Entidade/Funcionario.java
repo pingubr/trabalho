@@ -1,4 +1,4 @@
-package Entidade;
+package com.example.brunab.projeto.Entidade;
 
 import java.util.Date;
 

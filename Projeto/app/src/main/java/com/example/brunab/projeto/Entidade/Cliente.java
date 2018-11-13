@@ -1,4 +1,4 @@
-package Entidade;
+package com.example.brunab.projeto.Entidade;
 
 public class Cliente extends Pessoa {
 

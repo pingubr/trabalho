@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Telas.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="Telas.Cadastro_Locacao" />
-        <activity android:name="Telas.Cadastro_Veiculos" />
-        <activity android:name="Telas.Cadastro_Clientes" />
-        <activity android:name="Telas.Cadastro_Funcionarios" />
-        <activity android:name="Telas.Veiculos" />
-        <activity android:name="Telas.Clientes" />
-        <activity android:name="Telas.Funcionarios"></activity>
+        <activity android:name="com.example.brunab.projeto.Telas.Cadastro_Locacao" />
+        <activity android:name="com.example.brunab.projeto.Telas.Cadastro_Veiculos" />
+        <activity android:name="com.example.brunab.projeto.Telas.Cadastro_Clientes" />
+        <activity android:name="com.example.brunab.projeto.Telas.Cadastro_Funcionarios" />
+        <activity android:name="com.example.brunab.projeto.Telas.Veiculos" />
+        <activity android:name="com.example.brunab.projeto.Telas.Clientes" />
+        <activity android:name="com.example.brunab.projeto.Telas.Funcionarios"></activity>
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Telas.Cadastro_Funcionarios">
+    tools:context="com.example.brunab.projeto.Telas.Cadastro_Funcionarios">
 
     <Button
         android:id="@+id/btCancelar"
@@ -13,7 +13,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:text="Cancelar"
+        android:text="@string/funcicancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -27,7 +27,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
         android:ems="10"
-        android:hint="Nome"
+        android:hint="@string/nomefunci"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Endereço"
+        android:hint="@string/enderecofunci"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +59,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="RG"
+        android:hint="@string/rgfunci"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +73,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="CPF"
+        android:hint="@string/cpffunci"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btRG" />
@@ -87,7 +87,7 @@
         android:layout_marginRight="147dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="Supervisor"
+        android:text="@string/supervisor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btCPF" />
@@ -99,7 +99,7 @@
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
-        android:text="Salvar"
+        android:text="@string/funcisave"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

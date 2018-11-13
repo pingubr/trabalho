@@ -1,4 +1,4 @@
-package Telas;
+package com.example.brunab.projeto.Telas;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
