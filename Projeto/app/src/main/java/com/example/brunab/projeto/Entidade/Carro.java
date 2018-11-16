@@ -11,11 +11,11 @@ public class Carro {
     private Boolean locado;
 
 
-    atualizarLocacao(Float valor){
+    public void atualizarLocacao(Float valor){
         valorLocacao = valor;
     }
 
-    atualizarSeguro(Float seguro){
+    public void atualizarSeguro(Float seguro){
         valorSeguro = seguro;
     }
 
