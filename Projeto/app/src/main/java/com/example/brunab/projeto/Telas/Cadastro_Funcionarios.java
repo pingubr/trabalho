@@ -19,10 +19,10 @@ public class Cadastro_Funcionarios extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cadastro__funcionarios);
-        txNome = findViewById(R.id.etNome);
-        txRua = findViewById(R.id.etEndereco);
-        txRG = findViewById(R.id.etRG);
-        txCPF = findViewById(R.id.etCPF);
+        txNome = findViewById(R.id.cNome);
+        txRua = findViewById(R.id.cEndereco);
+        txRG = findViewById(R.id.cRG);
+        txCPF = findViewById(R.id.cCPF);
         cbSupervisor = findViewById(R.id.cbSuper);
     }
 }
