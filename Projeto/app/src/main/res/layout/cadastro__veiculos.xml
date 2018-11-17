@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/txMarca"
+        android:id="@+id/etMarca"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="18dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txModelo"
+        android:id="@+id/etModelo"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="18dp"
@@ -47,10 +47,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txMarca" />
+        app:layout_constraintTop_toBottomOf="@+id/etMarca" />
 
     <EditText
-        android:id="@+id/txPlaca"
+        android:id="@+id/etPlaca"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="18dp"
@@ -63,10 +63,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txModelo" />
+        app:layout_constraintTop_toBottomOf="@+id/etModelo" />
 
     <EditText
-        android:id="@+id/txCor"
+        android:id="@+id/etCor"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="18dp"
@@ -79,10 +79,10 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txPlaca" />
+        app:layout_constraintTop_toBottomOf="@+id/etPlaca" />
 
     <EditText
-        android:id="@+id/txSeguro"
+        android:id="@+id/etSeguro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="153dp"
@@ -95,10 +95,10 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txCor" />
+        app:layout_constraintTop_toBottomOf="@+id/etCor" />
 
     <EditText
-        android:id="@+id/txAluguel"
+        android:id="@+id/etAluguel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="153dp"
@@ -111,7 +111,7 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txSeguro" />
+        app:layout_constraintTop_toBottomOf="@+id/etSeguro" />
 
     <Button
         android:id="@+id/btSalvar"
