@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         String id = databaseFuncionario.push().getKey();
 
-        Funcionario funcionario = new Funcionario(id, "63913658300", "299957480", "Hector", "Avenida", "chefe");
+        Funcionario funcionario = new Funcionario(id, "63913658300", "299957480", "Hector", "Avenida");
 
         databaseFuncionario.child(id).setValue(funcionario);
     }

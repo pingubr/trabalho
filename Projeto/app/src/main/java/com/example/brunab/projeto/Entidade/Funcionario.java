@@ -9,7 +9,6 @@ public class Funcionario {
     private String rgFunc;
     private String nomeFunc;
     private String endFunc;
-    private String cargo;
     private Date dataDemissao;
     private Date dataAdmissao;
     private Boolean supervisor;
@@ -18,13 +17,44 @@ public class Funcionario {
         //construtor vazio, exigencia do Firebase
     }
 
-    public Funcionario(String id, String cpfFunc, String rgFunc, String nomeFunc, String endFunc, String cargo){
+    public Funcionario(String id, String cpfFunc, String rgFunc, String nomeFunc, String endFunc){
         this.id = id;
         this.cpfFunc = cpfFunc;
         this.rgFunc = rgFunc;
         this.nomeFunc = nomeFunc;
         this.endFunc = endFunc;
-        this.cargo = cargo;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setCpfFunc(String cpfFunc) {
+        this.cpfFunc = cpfFunc;
+    }
+
+    public void setRgFunc(String rgFunc) {
+        this.rgFunc = rgFunc;
+    }
+
+    public void setNomeFunc(String nomeFunc) {
+        this.nomeFunc = nomeFunc;
+    }
+
+    public void setEndFunc(String endFunc) {
+        this.endFunc = endFunc;
+    }
+
+    public void setDataDemissao(Date dataDemissao) {
+        this.dataDemissao = dataDemissao;
+    }
+
+    public void setDataAdmissao(Date dataAdmissao) {
+        this.dataAdmissao = dataAdmissao;
+    }
+
+    public void setSupervisor(Boolean supervisor) {
+        this.supervisor = supervisor;
     }
 
     public String getCpfFunc() {
@@ -41,10 +71,6 @@ public class Funcionario {
 
     public String getEndFunc() {
         return endFunc;
-    }
-
-    public String getCargo() {
-        return cargo;
     }
 
     public Date getDataDemissao() {
