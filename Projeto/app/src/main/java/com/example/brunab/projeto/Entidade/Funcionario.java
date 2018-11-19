@@ -6,6 +6,7 @@ public class Funcionario {
 
     private String id;
     private String cpfFunc;
+    private String senha;
     private String rgFunc;
     private String nomeFunc;
     private String endFunc;
@@ -27,6 +28,18 @@ public class Funcionario {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public void setCpfFunc(String cpfFunc) {

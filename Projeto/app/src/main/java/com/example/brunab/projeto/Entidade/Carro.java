@@ -2,6 +2,7 @@ package com.example.brunab.projeto.Entidade;
 
 public class Carro {
 
+    private String id;
     private String placa;
     private String marca;
     private String modelo;
@@ -10,13 +11,20 @@ public class Carro {
     private String cor;
     private Boolean locado;
 
-
     public void atualizarLocacao(Float valor){
         valorLocacao = valor;
     }
 
     public void atualizarSeguro(Float seguro){
         valorSeguro = seguro;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getPlaca() {
