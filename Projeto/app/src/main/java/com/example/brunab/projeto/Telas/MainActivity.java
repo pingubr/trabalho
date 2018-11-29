@@ -1,7 +1,9 @@
 package com.example.brunab.projeto.Telas;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.brunab.projeto.Entidade.Funcionario;
 import com.example.brunab.projeto.R;
@@ -15,13 +17,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DatabaseReference databaseFuncionario;
-        databaseFuncionario=FirebaseDatabase.getInstance().getReference("Funcionarios");
+    }
 
-        String id = databaseFuncionario.push().getKey();
+    public void Clientes (View view){
+        Intent it = new Intent(MainActivity.this, Clientes.class);
+        startActivity(it);
+    }
 
-        Funcionario funcionario = new Funcionario(id, "63913658300", "299957480", "Hector", "Avenida");
 
-        databaseFuncionario.child(id).setValue(funcionario);
+    public void Funcionarios (View view){
+        Intent it = new Intent(MainActivity.this, Funcionarios.class);
+        startActivity(it);
+    }
+
+
+    public void Veiculos (View view){
+        Intent it = new Intent(MainActivity.this, Veiculos.class);
+        startActivity(it);
     }
 }

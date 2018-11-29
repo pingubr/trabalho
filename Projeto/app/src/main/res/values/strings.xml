@@ -41,7 +41,9 @@
     /*Veiculos*/
     <string name="removeveiculo">Remover</string>
     <string name="novoveiculo">Novo</string>
-
+    <string name="btCliente">Clientes</string>
+    <string name="btFuncionarios">Funcionarios</string>
+    <string name="btVeiculos">Veiculos</string>
 
 
 </resources>

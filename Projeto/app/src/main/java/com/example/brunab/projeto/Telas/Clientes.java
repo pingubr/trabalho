@@ -45,51 +45,22 @@ public class Clientes extends AppCompatActivity {
         btNovo = findViewById(R.id.btAdd);
         viewClientes = findViewById(R.id.cliente_view);
 
-        database.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-                String string = dataSnapshot.getValue(String.class);
-            }
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        })
-
-
-
-
         viewClientes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             //Este overrride sobreescreve quando clica no item cliente dentro do list view
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
-                Intent it = new Intent(Cliente.this, Cadastro_Clientes.class);
-                it.putExtra("Cliente", (Serializable) parent.getItemAtPosition(i));
+                Intent it = new Intent(Clientes.this, Cadastro_Clientes.class);
+                it.putExtra("Clientes", (Serializable) parent.getItemAtPosition(i));
                 startActivity(it);
             }
-        }
+        });
     }
     public void novo (View view){
-        Intent it = new Intent(Cliente.this, Cadastro_Clientes.class);
+        Intent it = new Intent(Clientes.this, Cadastro_Clientes.class);
         startActivity(it);
     }
+
+
     //Este overrride atualiza a tela toda vez
     @Override
     protected void onResume() {
@@ -98,7 +69,8 @@ public class Clientes extends AppCompatActivity {
         ArrayAdapter<Cliente> adapter = new ArrayAdapter<Cliente>(this, android.R.layout.simple_list_item_1, listar());
         viewClientes.setAdapter(adapter);
     }
+    /*
     private List listar(){
-
-    }
+        metodo para puxar do banco e preencher uma lista
+    }*/
 }
