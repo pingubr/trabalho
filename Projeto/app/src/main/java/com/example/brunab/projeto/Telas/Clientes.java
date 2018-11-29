@@ -62,6 +62,7 @@ public class Clientes extends AppCompatActivity {
 
 
     //Este overrride atualiza a tela toda vez
+    
     @Override
     protected void onResume() {
         super.onResume();
