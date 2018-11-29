@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
+import com.example.brunab.projeto.Dao.Dao;
 import com.example.brunab.projeto.Entidade.Cliente;
 import com.example.brunab.projeto.Entidade.Funcionario;
 import com.example.brunab.projeto.R;
@@ -19,6 +20,7 @@ public class Cadastro_Funcionarios extends AppCompatActivity {
     private CheckBox cbSupervisor;
 
     Funcionario f;
+    private Dao dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,7 @@ public class Cadastro_Funcionarios extends AppCompatActivity {
         f.setRgFunc(txRG.getText().toString());
         f.setCpfFunc(txCPF.getText().toString());
 
+
         //f.setDataAdmissao();
         //f.setDataDemissao();
 
@@ -56,6 +59,7 @@ public class Cadastro_Funcionarios extends AppCompatActivity {
         else
             f.setSupervisor(false);
 
+        dao.Salvar(f);
         finish();
     }
 

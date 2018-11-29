@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.brunab.projeto.Dao.Dao;
 import com.example.brunab.projeto.Entidade.Cliente;
 import com.example.brunab.projeto.R;
 
@@ -17,6 +18,8 @@ public class Cadastro_Clientes extends AppCompatActivity {
     private EditText txDependentes;
 
     Cliente c;
+
+    private Dao dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,7 @@ public class Cadastro_Clientes extends AppCompatActivity {
         c.setCpf(txCPF.getText().toString());
         c.setCnh(txCNH.getText().toString());
         c.setNumDependentes(Integer.parseInt(txDependentes.getText().toString()));
+        dao.Salvar(c);
         finish();
     }
 

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.brunab.projeto.Dao.Dao;
 import com.example.brunab.projeto.Entidade.Carro;
 import com.example.brunab.projeto.R;
 
@@ -18,6 +19,7 @@ public class Cadastro_Veiculos extends AppCompatActivity {
     private EditText txAluguel;
 
     Carro c;
+    private Dao dao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,7 @@ public class Cadastro_Veiculos extends AppCompatActivity {
         c.setPlaca(txPlaca.getText().toString());
         c.setValorSeguro(Float.parseFloat(txSeguro.getText().toString()));
         c.setValorLocacao(Float.parseFloat(txAluguel.getText().toString()));
+        dao.Salvar(c);
 
         finish();
     }
