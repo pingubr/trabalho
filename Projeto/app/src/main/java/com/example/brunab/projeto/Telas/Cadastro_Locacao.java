@@ -12,4 +12,5 @@ public class Cadastro_Locacao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cadastro__locacao);
     }
+
 }

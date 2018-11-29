@@ -32,14 +32,14 @@
 
     /*Clientes*/
     <string name="novocliente">Novo</string>
-    <string name="removecliente">Novo</string>
+    <string name="removecliente">Remover</string>
 
     /*Funcionarios*/
-    <string name="removefunci">Novo</string>
+    <string name="removefunci">Remover</string>
     <string name="novofunci">Novo</string>
 
     /*Veiculos*/
-    <string name="removeveiculo">Novo</string>
+    <string name="removeveiculo">Remover</string>
     <string name="novoveiculo">Novo</string>
 
 

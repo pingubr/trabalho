@@ -32,6 +32,9 @@ public class Cadastro_Clientes extends AppCompatActivity {
         txCPF = findViewById(R.id.cCPF);
         txCNH = findViewById(R.id.cCNH);
         txDependentes = findViewById(R.id.cDependentes);
+        if (getIntent().getSerializableExtra("Cliente") !=null){
+            c=(Cliente) getIntent().getSerializableExtra("Cliente");
+        }
     }
 
     //Função de cadastro de clientes.
